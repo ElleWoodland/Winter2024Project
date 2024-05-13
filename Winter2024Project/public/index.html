@@ -1,13 +1,164 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+
+
+    <title>BucketList</title>
 </head>
-
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+    <!-- ======================================================================================== -->
+    
+    <!-- =================================== -->
+    <div data-role="page" id="home" data-theme='a'>
+        
 
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Bucket List - Home</h2>
+        
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#add" data-transition="flip">Add Item Page</a></li>
+                <li><a href="#subtract" data-transition="flip">Delete Item Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>  
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2> My List</h2>
+            <ol>
+                <li>
+                    Go Kayaking
+                </li>
+                <li>
+                    Make S'mores
+                </li>
+                <li>
+                    Go Hiking
+                </li>
+            </ol>
+
+        </div>
+       <!-- =================================== -->
+
+        <!-- =================================== -->
+          <!-- notes footer --> 
+          <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Elle Woodland</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+   <!-- ======================================================================================== -->
+
+
+   <!-- ======================================================================================== -->
+    <div data-role="page" id="add" data-theme='a'>
+        
+        <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Bucket List - Add</h2>
+
+            <div data-role="navbar" >
+                <ul>
+                 <li><a href="#home"data-transition="slideup">Home Page</a></li>
+                 <li><a href="#subtract" data-transition="slideup">Delete Item Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2>Add an item to the bucket list</h2>
+            <label id="goalNameLabel">Name of Goal:</label>
+            <input type="text" id="">
+            <button id="buttonAdd" type="button" >ADD</button> <br />
+
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2023 by Elle Woodland</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+     <!-- ======================================================================================== -->
+
+
+    
+      <!-- ======================================================================================== -->
+    <div data-role="page" id="subtract" data-theme='a'>
+        
+          <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Bucket List - Delete</h2>
+            <div data-role="navbar" >
+                <ul>
+                <li><a href="#home" data-transition="slidedown">Home Page</a></li>
+                <li><a href="#add"data-transition="slidedown">Add Item Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+           <!-- =================================== -->
+
+          <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2>Delete an item from the bucket list</h2>
+            <label id="goalDeleteLabel">Enter the number of the item to delete:</label>
+            <input type="number" id="deletedNumberInput">
+            <button id="buttonAdd" type="button" >DELETE</button> <br />
+            <div data-role="content" data-theme='a'>
+                
+            <h2> My List</h2>
+            <ol>
+                <li>
+                    Go Kayaking
+                </li>
+                <li>
+                    Make S'mores
+                </li>
+                <li>
+                    Go Hiking
+                </li>
+            </ol>
+            </div>
+        </div>
+           <!-- =================================== -->
+
+           <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2023 by Elle Woodland</h3>
+        </div>
+        <!-- =================================== -->
+
+    </div>
+     <!-- ======================================================================================== -->
+    
+    
+</body>
 </html>
